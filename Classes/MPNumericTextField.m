@@ -108,6 +108,7 @@ MPNumericTextFieldDelegate *numericDelegate;
 {
   _encodedValue = encodedValue;
   self.text = encodedValue;
+  [self sendActionsForControlEvents:UIControlEventEditingChanged];
 }
 
 - (MPNumericTextFieldDelegate *) numericDelegate {
